@@ -1,5 +1,5 @@
 ---
-title: "hello hugo"
+title: "hello world, hello hugo"
 date: 2023-03-23T13:48:26+11:00
 draft: false
 ---
