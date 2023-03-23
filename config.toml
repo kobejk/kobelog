@@ -1,4 +1,4 @@
 baseURL = ''
 languageCode = 'en-us'
 title = "kobe's log"
-theme = 'nostyleedit'
+theme = 'hugo-theme-nostyleplease'
