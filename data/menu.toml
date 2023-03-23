@@ -1,0 +1,18 @@
+[[entries]]
+title = "me"
+
+  [[entries.entries]]
+  title = "a third year IT student majoring in cyber security."
+
+  [[entries.entries]]
+  title = "github"
+  url = 'https://github.com/kobejk'
+
+[[entries]]
+title = "log"
+
+  [entries.post_list]
+  limit = 5
+  show_more = true
+  show_more_text = "See archive..."
+  show_more_url = "posts"
