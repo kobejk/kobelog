@@ -2,7 +2,7 @@
 title = "me"
 
   [[entries.entries]]
-  title = "a third year IT student majoring in cyber security."
+  title = "a third year cyber security student"
 
   [[entries.entries]]
   title = "github"
@@ -14,5 +14,5 @@ title = "log"
   [entries.post_list]
   limit = 5
   show_more = true
-  show_more_text = "See archive..."
-  show_more_url = "posts"
+#  show_more_text = "See archive..."
+#  show_more_url = "posts"
