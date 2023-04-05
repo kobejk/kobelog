@@ -4,7 +4,7 @@ date: 2023-03-23T13:48:26+11:00
 draft: false
 ---
 
-Hey, so I've been messing around with web stuff for a while now and I finally decided to put my skills to the test and publish some content online. My main reasons were to have a central place for all the interesting stuff I find, to create a personal documentation space for myself, and to show off what I can do to potential employers.
+So I've been messing around with web stuff for a while now and I finally decided to put my skills to the test and publish some content online. My main reasons were to have a central place for all the interesting stuff I find, to create a personal documentation space for myself, and to show off what I can do to potential employers.
 
 But, I quickly realized that creating a website from scratch using plain HTML and CSS was going to be a lot of work. So, I checked out some examples online and found out that almost half of all websites run on WordPress. It seemed like the perfect solution since it manages website posts so well.
 
