@@ -1,36 +1,38 @@
-baseURL = 'https://glowing-stardust-ec8ae8.netlify.app/'
+baseURL = 'https://kobe.onl'
 languageCode = 'en-us'
-title = "kobe's log"
-theme = 'hugo-theme-nostyleplease'
+title = 'kobes log'
+theme = 'risotto'
 
-[module]
-  [module.hugoVersion]
-    extended=true
-    min = "0.41.0"
-
-[markup]
-  [markup.goldmark]
-    [markup.goldmark.parser]
-      [markup.goldmark.parser.attribute]
-        block = true
-        title = true
-  [markup.highlight]
-    anchorLineNos = false
-    codeFences = true
-    guessSyntax = false
-    hl_Lines = ''
-    hl_inline = false
-    lineAnchors = ''
-    lineNoStart = 1
-    lineNos = false
-    lineNumbersInTable = true
-    noClasses = true
-    noHl = false
-    style = 'rrt'
-    tabWidth = 4
+# Automatically add content sections to main menu
+sectionPagesMenu = "main"
 
 [params]
-  [params.theme_config]
-    appearance = "auto"
-    back_home_text = ".."
-    date_format = "02-01-2006"
+noindex = false
+
+[params.theme]
+palette = "base16-dark"
+
+# Sidebar: about/bio
+[params.about]
+title = "kobes log"
+description = "personal blog of a third year cyber security student."
+logo = "images/rice.svg"
+
+# Sidebar: social links
+# Available icon sets:
+# * FontAwesome 6 <https://fontawesome.com/> ('fa-brands', 'fa-normal', or 'fa-solid' for brands)
+# * Academicons <https://jpswalsh.github.io/academicons> ('ai ai-')
+
+[[params.socialLinks]]
+icon = "fa-brands fa-github"
+title = "GitHub"
+url = "https://github.com/kobejk"
+
+# Menu items
+[menu]
+
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 10

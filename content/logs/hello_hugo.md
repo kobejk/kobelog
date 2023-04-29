@@ -1,27 +1,28 @@
 ---
 title: "hello world, hello hugo"
 date: 2023-03-23T13:48:26+11:00
+author: "kobe"
 draft: false
 ---
 
-So I've been messing around with web stuff for a while now and I finally decided to put my skills to the test and publish some content online. My main reasons were to have a central place for all the interesting stuff I find, to create a personal documentation space for myself, and to show off what I can do to potential employers.
+I've been messing around with web stuff for a while now and I finally decided to put my skills to the test and publish some content online. My main reasons were to have a central place for all the interesting stuff I find and to create a personal documentation space for myself.
 
-But, I quickly realized that creating a website from scratch using plain HTML and CSS was going to be a lot of work. So, I checked out some examples online and found out that almost half of all websites run on WordPress. It seemed like the perfect solution since it manages website posts so well.
+I quickly realized that creating a website from scratch using plain HTML and CSS was going to be a lot of work. So, I checked out some examples online and found out that almost half of all websites run on WordPress. It seemed like the perfect solution since it manages website posts so well.
 
-However, as someone who has some experience with web security, I know that WordPress can have security vulnerabilities if not kept up-to-date. Plus, I noticed that WordPress sites can be a little slow sometimes. 
+However as someone who has studied web security, I know that WordPress can have security vulnerabilities if not kept up-to-date. Plus, WordPress sites can be a little slow.
 
-That's when I stumbled upon Hugo, a website framework built in Golang. Apparently, it's the "world’s fastest framework for building websites". Hugo generates static sites from Markdown, which means there are no dynamic elements or JavaScript on the page. This not only speeds up page loading times, but also reduces the risk of web attacks since there's no way to perform Code Injection.
+That's when I stumbled upon Hugo, a website framework built in Golang. It's the "world’s fastest framework for building websites" generates static sites from Markdown, which means there are no dynamic elements or JavaScript on the page. This speeds up page loading times and makes for a far simpler developer experience.
 
 So how did I do it?
 
-* [[Installing Hugo]](#installing-hugo)
-* [[Creating a Hugo site]](#creating-a-hugo-site)
-* [[Installing a Theme]](#installing-a-theme)
-* [[Viewing the website]](#viewing-the-website)
-* [[Creating a post]](#creating-a-post)
-* [[Building the website]](#building-the-website)
+- [[Installing Hugo]](#installing-hugo)
+- [[Creating a Hugo site]](#creating-a-hugo-site)
+- [[Installing a Theme]](#installing-a-theme)
+- [[Viewing the website]](#viewing-the-website)
+- [[Creating a post]](#creating-a-post)
+- [[Building the website]](#building-the-website)
 
-***
+---
 
 # Installing Hugo
 
@@ -89,13 +90,13 @@ You can view the website by running the development server with the following co
 hugo server
 ```
 
-This will create a local server running on `localhost:1313` which shows live edits to your pages. 
+This will create a local server running on `localhost:1313` which shows live edits to your pages.
 
 **NOTE: This will not show pages marked as drafts. Check the "Creating a post" section to learn how to unmark draft pages.**
 
 # Creating a post
 
-To create a post, enter the following command: 
+To create a post, enter the following command:
 
 ```bash
 hugo new about.md
@@ -119,6 +120,5 @@ This will create all the HTML and CSS necessary for the site to function in the 
 
 Add the files to a hosting provider of your choice and you're good to go.
 
-For a more in-depth explanation on Hugo, read their docs at 
+For a more in-depth explanation on Hugo, read their docs at
 [hugo.io](https://gohugo.io/documentation/).
-
