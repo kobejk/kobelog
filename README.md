@@ -1,2 +1,3 @@
 # kobelog
-A repo for my Hugo site.
+
+My personal blog site.
