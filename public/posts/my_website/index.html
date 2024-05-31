@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Creating my blog with Hugo | Kobe&#39;s Log</title>
+<meta name="keywords" content="">
+<meta name="description" content="Introduction I&rsquo;ve decided to make a website/blog where I can talk about security and other bits of technology I find interesting. As I near the end of my university studies, I want to start creating content to cement my learning and also provide some value to others. This is a deep interest of mine, and I think it would be very beneficial to share my insights and experiences with a broader audience.">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:1313/posts/my_website/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.b609c58d5c11bb90b1a54e04005d74ad1ddf22165eb79f5533967e57df9c3b50.css" integrity="sha256-tgnFjVwRu5CxpU4EAF10rR3fIhZet59VM5Z&#43;V9&#43;cO1A=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/my_website/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Kobe&#39;s Log (Alt + H)">Kobe&#39;s Log</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      Creating my blog with Hugo
+      <span class="entry-hint" title="Draft">
+        <svg xmlns="http://www.w3.org/2000/svg" height="35" viewBox="0 -960 960 960" fill="currentColor">
+          <path
+            d="M160-410v-60h300v60H160Zm0-165v-60h470v60H160Zm0-165v-60h470v60H160Zm360 580v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q9 9 13 20t4 22q0 11-4.5 22.5T862.09-380L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z" />
+        </svg>
+      </span>
+    </h1>
+    <div class="post-meta"><span title='2024-05-31 12:56:41 +1000 AEST'>May 31, 2024</span>
+
+</div>
+  </header> <div class="toc">
+    <details  open>
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#introduction" aria-label="Introduction">Introduction</a></li>
+                <li>
+                    <a href="#why-hugo" aria-label="Why Hugo?">Why Hugo?</a></li>
+                <li>
+                    <a href="#getting-started-with-hugo" aria-label="Getting Started with Hugo">Getting Started with Hugo</a><ul>
+                        
+                <li>
+                    <a href="#installing-hugo" aria-label="Installing Hugo">Installing Hugo</a><ul>
+                        
+                <li>
+                    <a href="#on-debian-based-systems" aria-label="On Debian-based Systems">On Debian-based Systems</a></li>
+                <li>
+                    <a href="#compatability-issues-on-debian-based-systems" aria-label="Compatability Issues on Debian-based Systems">Compatability Issues on Debian-based Systems</a></li></ul>
+                </li>
+                <li>
+                    <a href="#creating-a-new-hugo-site" aria-label="Creating a New Hugo Site">Creating a New Hugo Site</a></li>
+                <li>
+                    <a href="#running-your-new-site" aria-label="Running Your New Site">Running Your New Site</a></li>
+                <li>
+                    <a href="#themes-and-deployment" aria-label="Themes and deployment">Themes and deployment</a></li>
+                <li>
+                    <a href="#further-documentation" aria-label="Further Documentation">Further Documentation</a></li></ul>
+                </li>
+                <li>
+                    <a href="#final-thoughts" aria-label="Final Thoughts">Final Thoughts</a>
+                </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><h2 id="introduction">Introduction<a hidden class="anchor" aria-hidden="true" href="#introduction">#</a></h2>
+<p>I&rsquo;ve decided to make a website/blog where I can talk about security and other bits of technology I find interesting. As I near the end of my university studies, I want to start creating content to cement my learning and also provide some value to others. This is a deep interest of mine, and I think it would be very beneficial to share my insights and experiences with a broader audience.</p>
+<h2 id="why-hugo">Why Hugo?<a hidden class="anchor" aria-hidden="true" href="#why-hugo">#</a></h2>
+<p>After exploring various options, I&rsquo;ve decided to use Hugo, a static site generator written in Golang, which is super fast at building websites. Here are some key reasons for choosing Hugo:</p>
+<ol>
+<li><strong>No Backend Database</strong>: Everything in Hugo is written in Markdown, configured with YAML, and templated with the Go templating language. This simplicity reduces complexity and potential points of failure.</li>
+<li><strong>Edge Deployment</strong>: Hugo sites can be deployed on the edge using a CDN such as Netlify. This ensures fast content delivery to users, no matter where they are.</li>
+<li><strong>Cost-Effective</strong>: Given the expected usage of my blog for the foreseeable future, Hugo is the most cost-effective option. It avoids the overhead associated with CMS options like WordPress.</li>
+<li><strong>Security</strong>: CMS platforms like WordPress are notoriously slow, clunky, and prone to security vulnerabilities (especially PHP-based ones). Hugo minimizes the attack surface of the website because, during the CI/CD build process, a new post is converted from Markdown to static HTML and CSS. There is no database to enumerate and no room for injection attacks.</li>
+<li><strong>Control Over Content</strong>: Using Hugo instead of website builders like SquareSpace gives me more control over my content and the overall structure of my site.</li>
+</ol>
+<h2 id="getting-started-with-hugo">Getting Started with Hugo<a hidden class="anchor" aria-hidden="true" href="#getting-started-with-hugo">#</a></h2>
+<p>If you would like to install Hugo and play around, here is a quick start guide:</p>
+<h3 id="installing-hugo">Installing Hugo<a hidden class="anchor" aria-hidden="true" href="#installing-hugo">#</a></h3>
+<p>First, ensure that Go is installed on your system by following the instructions at <a href="https://go.dev/doc/install">Go Installation Guide</a>.</p>
+<p>Then, install Hugo using the following commands:</p>
+<h4 id="on-debian-based-systems">On Debian-based Systems<a hidden class="anchor" aria-hidden="true" href="#on-debian-based-systems">#</a></h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-0-1"><a class="lnlinks" href="#hl-0-1">1</a>
+</span><span class="lnt" id="hl-0-2"><a class="lnlinks" href="#hl-0-2">2</a>
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo apt update <span class="o">&amp;&amp;</span> sudo apt upgrade -y
+</span></span><span class="line"><span class="cl">sudo apt install hugo
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="compatability-issues-on-debian-based-systems">Compatability Issues on Debian-based Systems<a hidden class="anchor" aria-hidden="true" href="#compatability-issues-on-debian-based-systems">#</a></h4>
+<p>I&rsquo;ve encountered compatibility issues with the Debian-based packages as they are often behind in their software versions. If you&rsquo;re having compatibility issues, download the latest release from the <a href="https://github.com/gohugoio/hugo/releases">Hugo GitHub release page</a>.</p>
+<p>Download the relevant file (for me it was <code>hugo_extended_0.126.2_linux-amd64.deb</code>). You definitely want to install the extended version to take advantage of all the features.</p>
+<p>Also, download the checksum file, for me it was: <code>hugo_0.126.2_checksums.txt</code>.</p>
+<p>To ensure the integrity of the downloaded file, verify the file hash against the checksum. Here are the commands to do this:</p>
+<ol>
+<li><strong>Download the Hugo .deb file and checksum file:</strong></li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-1-1"><a class="lnlinks" href="#hl-1-1">1</a>
+</span><span class="lnt" id="hl-1-2"><a class="lnlinks" href="#hl-1-2">2</a>
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">wget https://github.com/gohugoio/hugo/releases/download/v0.126.2/hugo_extended_0.126.2_linux-amd64.deb
+</span></span><span class="line"><span class="cl">wget https://github.com/gohugoio/hugo/releases/download/v0.126.2/hugo_0.126.2_checksums.txt
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ol start="2">
+<li><strong>Calculate the SHA256 hash of the downloaded .deb file:</strong></li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-2-1"><a class="lnlinks" href="#hl-2-1">1</a>
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sha256sum hugo_extended_0.126.2_linux-amd64.deb
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ol start="3">
+<li><strong>Check the calculated hash against the checksum file:</strong></li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-3-1"><a class="lnlinks" href="#hl-3-1">1</a>
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">grep hugo_extended_0.126.2_linux-amd64.deb hugo_0.126.2_checksums.txt
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>If the output of sha256sum matches the hash listed in the checksum file, the download is verified.</p>
+<ol start="4">
+<li><strong>Install the downloaded Hugo package:</strong></li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-4-1"><a class="lnlinks" href="#hl-4-1">1</a>
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo dpkg -i hugo_extended_0.126.2_linux-amd64.deb
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>This ensures you have the latest version of Hugo with all the extended features.</p>
+<h3 id="creating-a-new-hugo-site">Creating a New Hugo Site<a hidden class="anchor" aria-hidden="true" href="#creating-a-new-hugo-site">#</a></h3>
+<p>Create a new Hugo site using the YAML format (avoiding TOML for simplicity):</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-5-1"><a class="lnlinks" href="#hl-5-1">1</a>
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">hugo new site MyNewSite --format yaml
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="running-your-new-site">Running Your New Site<a hidden class="anchor" aria-hidden="true" href="#running-your-new-site">#</a></h3>
+<p>Navigate to your new site&rsquo;s directory and start the Hugo server:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt" id="hl-6-1"><a class="lnlinks" href="#hl-6-1">1</a>
+</span><span class="lnt" id="hl-6-2"><a class="lnlinks" href="#hl-6-2">2</a>
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">cd</span> MyNewSite
+</span></span><span class="line"><span class="cl">hugo server
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Just like that, you have a Hugo development server running a local live website. You can now start customizing your site and adding content.</p>
+<h3 id="themes-and-deployment">Themes and deployment<a hidden class="anchor" aria-hidden="true" href="#themes-and-deployment">#</a></h3>
+<p>You can access a ton of prebuilt themes for Hugo at <a href="https://themes.gohugo.io/">Hugo Themes</a>. These themes can give your site a professional look with minimal effort.</p>
+<p>To deploy your site, follow the instructions provided at <a href="https://gohugo.io/hosting-and-deployment/">Hugo Hosting and Deployment</a>. This guide covers various hosting options and the steps needed to get your site live.</p>
+<h3 id="further-documentation">Further Documentation<a hidden class="anchor" aria-hidden="true" href="#further-documentation">#</a></h3>
+<p>For more detailed information and advanced usage, refer to the <a href="https://gohugo.io/documentation/">Hugo Documentation</a>.</p>
+<h2 id="final-thoughts">Final Thoughts<a hidden class="anchor" aria-hidden="true" href="#final-thoughts">#</a></h2>
+<p>Creating a blog with Hugo is a straightforward and efficient way to share your knowledge and interests with the world. By leveraging the power of static site generation, you can build a fast, secure, and easily maintainable website. I hope this guide helps you get started on your own Hugo journey!</p>
+<p>And that&rsquo;s about it.</p>
+<p>Signing off,</p>
+<p><em>Kobe</em></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2024 <a href="http://localhost:1313/">Kobe&#39;s Log</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

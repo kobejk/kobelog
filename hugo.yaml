@@ -1,3 +1,21 @@
-baseURL: https://example.org/
+baseURL: https://kobejk.com
 languageCode: en-us
-title: My New Hugo Site
+title: Kobe's Log
+theme: ["PaperMod"]
+params:
+  homeInfoParams:
+    Title: Hi there 👋
+    Content: Welcome to my blog! Here you'll find my thoughts on security, development and technology in general.
+    socialIcons:
+      - name: "github"
+        url: "https://github.com/kobejk"
+      - name: "linkedin"
+        url: "https://linkedin.com/in/kobekunce"
+markup:
+  highlight:
+    noClasses: false
+    anchorLineNos: true
+    codeFences: true
+    guessSyntax: true
+    lineNos: true
+    style: monokai
